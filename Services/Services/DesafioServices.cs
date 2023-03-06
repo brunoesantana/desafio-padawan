@@ -18,7 +18,11 @@ public class DesafioServices : IDesafioServices
                 divisores.Add(i);
             }
         }
-        divisores.Add(numero);
+        if(numero > 2)
+        {
+            divisores.Add(numero);
+        }
+        
         return divisores;
     }
 
