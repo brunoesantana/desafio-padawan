@@ -1,8 +1,12 @@
+using Services.Interfaces;
+using Services.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IDesafioServices, DesafioServices>();
 
 var app = builder.Build();
 
