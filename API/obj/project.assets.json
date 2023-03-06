@@ -107,6 +107,26 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
+      },
+      "Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Services.dll": {}
+        }
       }
     }
   },
@@ -451,11 +471,23 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
+    },
+    "Services/1.0.0": {
+      "type": "project",
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.2",
+      "Models >= 1.0.0",
+      "Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -485,7 +517,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\williamgabriel_frwk\\Documents\\GitHub\\Microservices\\desafio-padawan\\Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\williamgabriel_frwk\\Documents\\GitHub\\Microservices\\desafio-padawan\\Models\\Models.csproj"
+            },
+            "C:\\Users\\williamgabriel_frwk\\Documents\\GitHub\\Microservices\\desafio-padawan\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\williamgabriel_frwk\\Documents\\GitHub\\Microservices\\desafio-padawan\\Services\\Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
