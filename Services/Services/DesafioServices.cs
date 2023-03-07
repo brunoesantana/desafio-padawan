@@ -49,7 +49,7 @@ public class DesafioServices : IDesafioServices
 
     public bool NumeroPrimo(int numero)
     {
-        if (numero == 1)
+        if (numero <= 1)
         {
             return false;
         }
